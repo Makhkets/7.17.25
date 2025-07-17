@@ -1,0 +1,15 @@
+{
+    "app": {
+        "port": 8080,
+        "address": "0.0.0.0"
+    },
+
+    "filter": {
+        "max_files": 3,
+        "allowed_extensions": [
+            ".pdf",
+            ".jpeg"
+        ]
+    }
+}
+

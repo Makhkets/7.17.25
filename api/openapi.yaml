@@ -1,0 +1,191 @@
+openapi: 3.0.3
+info:
+  title: File Archive Service API
+  description: API для создания архивов из файлов по ссылкам
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+    description: Development server
+
+paths:
+  /tasks:
+    post:
+      summary: Создать новую задачу
+      operationId: createTask
+      responses:
+        '201':
+          description: Задача успешно создана
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '503':
+          description: Сервер занят (максимум 3 задачи одновременно)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    
+    get:
+      summary: Получить список всех задач
+      operationId: getTasks
+      responses:
+        '200':
+          description: Список задач
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
+
+  /tasks/{taskId}:
+    get:
+      summary: Получить статус задачи
+      operationId: getTaskStatus
+      parameters:
+        - name: taskId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Статус задачи
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '404':
+          description: Задача не найдена
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /tasks/{taskId}/files:
+    post:
+      summary: Добавить файл в задачу
+      operationId: addFileToTask
+      parameters:
+        - name: taskId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AddFileRequest'
+      responses:
+        '200':
+          description: Файл успешно добавлен
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '400':
+          description: Неверный запрос
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Задача не найдена
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '409':
+          description: Превышен лимит файлов (максимум 3)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    Task:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: Уникальный идентификатор задачи
+        status:
+          type: string
+          enum: [pending, processing, completed, failed]
+          description: Статус задачи
+        files:
+          type: array
+          items:
+            $ref: '#/components/schemas/FileInfo'
+          description: Список файлов в задаче
+        archiveUrl:
+          type: string
+          nullable: true
+          description: Ссылка на архив (доступна только когда задача завершена)
+        createdAt:
+          type: string
+          format: date-time
+          description: Время создания задачи
+        updatedAt:
+          type: string
+          format: date-time
+          description: Время последнего обновления задачи
+      required:
+        - id
+        - status
+        - files
+        - createdAt
+        - updatedAt
+
+    FileInfo:
+      type: object
+      properties:
+        url:
+          type: string
+          format: uri
+          description: URL файла
+        filename:
+          type: string
+          description: Имя файла
+        status:
+          type: string
+          enum: [pending, downloaded, failed]
+          description: Статус загрузки файла
+        error:
+          type: string
+          nullable: true
+          description: Описание ошибки (если есть)
+      required:
+        - url
+        - filename
+        - status
+
+    AddFileRequest:
+      type: object
+      properties:
+        url:
+          type: string
+          format: uri
+          description: URL файла для добавления
+      required:
+        - url
+
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Код ошибки
+        message:
+          type: string
+          description: Сообщение об ошибке
+      required:
+        - code
+        - message 

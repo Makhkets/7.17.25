@@ -1,0 +1,246 @@
+{"timestamp":"21:30:30.577","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"21:30:30.578","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"21:35:35.164","level":"DEBUG","message":"file added ","data":{"file":"https://example.com/file.pdf"}}
+{"timestamp":"21:05:05.949","level":"DEBUG","message":"file added ","data":{"file":"ahttps://example.com/file.pdf"}}
+{"timestamp":"21:29:29.405","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"21:29:29.405","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"21:29:29.405","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"21:30:30.739","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"21:30:30.740","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"21:52:52.349","level":"DEBUG","message":"file added ","data":{"file":"ahttps://example.com/file.pdf"}}
+{"timestamp":"21:05:05.552","level":"DEBUG","message":"file added ","data":{"file":"https://example.com/file.pdf"}}
+{"timestamp":"21:49:49.913","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"21:49:49.913","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"21:49:49.913","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"21:51:51.395","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"21:51:51.396","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"21:54:54.808","level":"DEBUG","message":"file added ","data":{"file":"https://example.com/file.pdf"}}
+{"timestamp":"21:58:58.796","level":"DEBUG","message":"file added ","data":{"file":"ahttps://example.com/file.pdf"}}
+{"timestamp":"21:59:59.344","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"21:59:59.345","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"21:59:59.345","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"21:00:00.540","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"21:00:00.541","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"21:41:41.629","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"21:41:41.629","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"21:41:41.630","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"21:49:49.829","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"21:49:49.829","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"21:36:36.288","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"21:36:36.289","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"21:36:36.289","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"21:37:37.351","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"21:37:37.352","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"21:43:43.130","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"21:43:43.130","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"21:50:50.391","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"21:50:50.391","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"21:48:48.788","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"21:48:48.788","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"21:40:40.941","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"21:40:40.942","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"21:48:48.922","level":"DEBUG","message":"file added ","data":{"file":"https://example.com/file.pdf"}}
+{"timestamp":"01:35:35.546","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"01:35:35.546","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"01:35:35.546","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"01:36:36.992","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:36:36.992","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:12:12.782","level":"DEBUG","message":"task created ","data":{"task":{"createdAt":"2025-07-18T01:05:12+03:00","files":[],"id":"94ba6c0f-102f-4ea5-a491-6344abf0a94f","status":"pending","updatedAt":"0001-01-01T00:00:00Z"}}}
+{"timestamp":"01:47:47.283","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"01:47:47.283","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"01:47:47.283","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"01:48:48.677","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:48:48.678","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:55:55.679","level":"DEBUG","message":"task created ","data":{"task":{"createdAt":"2025-07-18T01:08:55+03:00","files":[],"id":"a1e44d28-82de-41d7-8b3a-ef87adce283e","status":"pending","updatedAt":"0001-01-01T00:00:00Z"}}}
+{"timestamp":"01:55:55.922","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"01:55:55.922","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"01:55:55.922","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"01:57:57.001","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:57:57.001","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:04:04.740","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:04:04.741","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:04:04.741","level":"ERROR","message":"server failed ","data":{"error":"listen tcp 0.0.0.0:8080: bind: address already in use"}}
+{"timestamp":"01:14:14.670","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"01:14:14.670","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"01:14:14.670","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"01:16:16.041","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:16:16.041","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:20:20.881","level":"DEBUG","message":"task created ","data":{"task":{"createdAt":"2025-07-18T01:10:20+03:00","files":[],"id":"5dffe655-4d34-4ec1-8734-2b72de52b81f","status":"pending","updatedAt":"0001-01-01T00:00:00Z"}}}
+{"timestamp":"01:17:17.425","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"01:17:17.426","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"01:17:17.426","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"01:07:07.211","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:07:07.211","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:26:26.193","level":"DEBUG","message":"task created ","data":{"task":{"createdAt":"2025-07-18T01:12:26+03:00","files":[],"id":"47c7e9a4-16ef-409c-8574-75e3ca20165f","status":"pending","updatedAt":"0001-01-01T00:00:00Z"}}}
+{"timestamp":"01:08:08.728","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:08:08.729","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:11:11.103","level":"DEBUG","message":"task created ","data":{"task":{"createdAt":"2025-07-18T01:13:11+03:00","files":[],"id":"3e3194fc-28d1-4285-996c-a0c210e3a19a","status":"pending","updatedAt":"0001-01-01T00:00:00Z"}}}
+{"timestamp":"01:03:03.854","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"01:03:03.854","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"01:03:03.854","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"01:05:05.567","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:05:05.568","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:07:07.840","level":"DEBUG","message":"task created ","data":{"task":{"createdAt":"2025-07-18T01:18:07+03:00","files":[],"id":"1c516565-178b-4eee-bbae-a91e8e1ddfee","status":"pending","updatedAt":"0001-01-01T00:00:00Z"}}}
+{"timestamp":"01:38:38.339","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"01:38:38.339","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"01:38:38.339","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"01:39:39.534","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:39:39.535","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:45:45.814","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"01:45:45.815","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"01:45:45.815","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"01:46:46.533","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:46:46.533","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:49:49.215","level":"DEBUG","message":"task created ","data":{"task":{"createdAt":"2025-07-18T01:19:49+03:00","files":[],"id":"ab82c227-53ca-421f-944f-ee8e1d4cc58a","status":"pending","updatedAt":"0001-01-01T00:00:00Z"}}}
+{"timestamp":"01:44:44.359","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"01:44:44.360","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"01:44:44.360","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"01:45:45.650","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:45:45.650","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:48:48.997","level":"DEBUG","message":"task created ","data":{"task":{"createdAt":"2025-07-18T01:20:48+03:00","files":[],"id":"531bb030-5e67-4463-b2c1-bdda52378a35","status":"pending","updatedAt":"0001-01-01T00:00:00Z"}}}
+{"timestamp":"01:45:45.919","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"01:45:45.919","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"01:45:45.919","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"01:48:48.242","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:48:48.242","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:52:52.181","level":"INFO","message":"Repo.CreateTask called ","data":{"status":"pending","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:52:52.182","level":"INFO","message":"Task created successfully ","data":{"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192","totalTasks":1}}
+{"timestamp":"01:52:52.182","level":"DEBUG","message":"task created ","data":{"task":{"createdAt":"2025-07-18T01:27:52+03:00","files":[],"id":"abdadc35-7007-45f2-b9c3-080b749d7192","status":"pending","updatedAt":"0001-01-01T00:00:00Z"}}}
+{"timestamp":"01:17:17.179","level":"INFO","message":"AddFileToTask handler called ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/435.jpg","maxFiles":3,"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.180","level":"INFO","message":"URL validation passed, calling service.AddFileToTask \n","data":{}}
+{"timestamp":"01:17:17.180","level":"INFO","message":"Service.AddFileToTask started ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/435.jpg","maxFiles":3,"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.180","level":"INFO","message":"findTask called ","data":{"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.180","level":"INFO","message":"Repo.FindTaskByID called ","data":{"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.180","level":"INFO","message":"Task found successfully ","data":{"filesCount":0,"status":"pending","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.180","level":"INFO","message":"Task found successfully ","data":{"filesCount":0,"status":"pending","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.180","level":"INFO","message":"Task found successfully ","data":{"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192","taskStatus":"pending"}}
+{"timestamp":"01:17:17.180","level":"INFO","message":"HowManyFiles called ","data":{"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.181","level":"INFO","message":"Checking directory ","data":{"directory":"/home/makhkets/testovoe/photo_storage","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.181","level":"INFO","message":"HowManyFiles result ","data":{"fileCount":0,"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.181","level":"INFO","message":"Current files count ","data":{"currentFiles":0,"maxFiles":3,"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.181","level":"INFO","message":"Starting file download ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/435.jpg","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.181","level":"INFO","message":"downloadFile started ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/435.jpg","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.182","level":"INFO","message":"Generated file info ","data":{"filePath":"/home/makhkets/testovoe/photo_storageabdadc35-7007-45f2-b9c3-080b749d7192.k3Ct","filename":"abdadc35-7007-45f2-b9c3-080b749d7192.k3Ct","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.182","level":"INFO","message":"Adding file to task ","data":{"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.182","level":"INFO","message":"Repo.FindTaskByID called ","data":{"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.182","level":"INFO","message":"Task found successfully ","data":{"filesCount":0,"status":"pending","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.182","level":"INFO","message":"File info created ","data":{"filename":"abdadc35-7007-45f2-b9c3-080b749d7192.k3Ct","status":"pending","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.183","level":"INFO","message":"Repo.UpdateTaskByID called ","data":{"filesCount":1,"status":"pending","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.183","level":"INFO","message":"Task updated successfully ","data":{"status":"pending","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.183","level":"INFO","message":"File added to task successfully ","data":{"filename":"abdadc35-7007-45f2-b9c3-080b749d7192.k3Ct","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.183","level":"INFO","message":"Starting HTTP download ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/435.jpg","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.686","level":"INFO","message":"HTTP response received ","data":{"contentLength":3708,"statusCode":200,"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.686","level":"INFO","message":"Creating local file ","data":{"filePath":"/home/makhkets/testovoe/photo_storageabdadc35-7007-45f2-b9c3-080b749d7192.k3Ct","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.686","level":"INFO","message":"Copying file content ","data":{"filePath":"/home/makhkets/testovoe/photo_storageabdadc35-7007-45f2-b9c3-080b749d7192.k3Ct","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.686","level":"INFO","message":"File downloaded successfully ","data":{"bytesWritten":3708,"filePath":"/home/makhkets/testovoe/photo_storageabdadc35-7007-45f2-b9c3-080b749d7192.k3Ct","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.686","level":"INFO","message":"Defer function: updating file status ","data":{"filename":"abdadc35-7007-45f2-b9c3-080b749d7192.k3Ct","finalStatus":"downloaded","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.686","level":"INFO","message":"FindAndDeleteFile called ","data":{"filename":"abdadc35-7007-45f2-b9c3-080b749d7192.k3Ct","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192","totalFiles":1}}
+{"timestamp":"01:17:17.686","level":"INFO","message":"File found in task ","data":{"fileIndex":0,"filename":"abdadc35-7007-45f2-b9c3-080b749d7192.k3Ct","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.686","level":"INFO","message":"File removed from task ","data":{"filename":"abdadc35-7007-45f2-b9c3-080b749d7192.k3Ct","remainingFiles":0,"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.686","level":"INFO","message":"Repo.UpdateTaskByID called ","data":{"filesCount":0,"status":"pending","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.686","level":"INFO","message":"Task updated successfully ","data":{"status":"pending","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.687","level":"INFO","message":"Task updated with final file status ","data":{"filename":"abdadc35-7007-45f2-b9c3-080b749d7192.k3Ct","status":"downloaded","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.687","level":"INFO","message":"File downloaded successfully ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/435.jpg","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.687","level":"INFO","message":"HowManyFiles called ","data":{"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.687","level":"INFO","message":"Checking directory ","data":{"directory":"/home/makhkets/testovoe/photo_storage","taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.687","level":"INFO","message":"HowManyFiles result ","data":{"fileCount":0,"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.687","level":"INFO","message":"Files count after download ","data":{"maxFiles":3,"newFilesCount":0,"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.687","level":"INFO","message":"Service.AddFileToTask completed ","data":{"taskID":"abdadc35-7007-45f2-b9c3-080b749d7192"}}
+{"timestamp":"01:17:17.687","level":"INFO","message":"Service.AddFileToTask completed \n","data":{}}
+{"timestamp":"01:32:32.222","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"01:32:32.223","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"01:32:32.223","level":"INFO","message":"server exited \n","data":{}}
+{"timestamp":"01:34:34.686","level":"INFO","message":"starting application ","data":{"config":{"app":{"address":"0.0.0.0","port":8080},"filter":{"allowed_extensions":[".pdf",".jpeg"],"max_files":3}}}}
+{"timestamp":"01:34:34.686","level":"INFO","message":"starting server ","data":{"address":"0.0.0.0:8080"}}
+{"timestamp":"01:42:42.383","level":"INFO","message":"Repo.CreateTask called ","data":{"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:42:42.383","level":"INFO","message":"Task created successfully ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101","totalTasks":1}}
+{"timestamp":"01:42:42.383","level":"DEBUG","message":"task created ","data":{"task":{"createdAt":"2025-07-18T01:38:42+03:00","files":[],"id":"96a0bb2f-8584-43bd-aee6-bd093b253101","status":"pending","updatedAt":"0001-01-01T00:00:00Z"}}}
+{"timestamp":"01:59:59.874","level":"INFO","message":"AddFileToTask handler called ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/435.jpg","maxFiles":3,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.874","level":"INFO","message":"URL validation passed, calling service.AddFileToTask \n","data":{}}
+{"timestamp":"01:59:59.874","level":"INFO","message":"Service.AddFileToTask started ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/435.jpg","maxFiles":3,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.875","level":"INFO","message":"findTask called ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.875","level":"INFO","message":"Repo.FindTaskByID called ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.875","level":"INFO","message":"Task found successfully ","data":{"filesCount":0,"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.875","level":"INFO","message":"Task found successfully ","data":{"filesCount":0,"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.875","level":"INFO","message":"Task found successfully ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101","taskStatus":"pending"}}
+{"timestamp":"01:59:59.876","level":"INFO","message":"HowManyFiles called ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.877","level":"INFO","message":"Checking directory ","data":{"directory":"/home/makhkets/testovoe/photo_storage","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.877","level":"INFO","message":"HowManyFiles result ","data":{"fileCount":0,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.877","level":"INFO","message":"Current files count ","data":{"currentFiles":0,"maxFiles":3,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.877","level":"INFO","message":"Starting file download ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.877","level":"INFO","message":"downloadFile started ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.878","level":"INFO","message":"Generated file info ","data":{"extension":".jpg","filePath":"/home/makhkets/testovoe/photo_storage/96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","originalFilename":"435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101","uniqueFilename":"96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg"}}
+{"timestamp":"01:59:59.878","level":"INFO","message":"Adding file to task ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.878","level":"INFO","message":"Repo.FindTaskByID called ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.878","level":"INFO","message":"Task found successfully ","data":{"filesCount":0,"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.882","level":"INFO","message":"File info created ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.882","level":"INFO","message":"Repo.UpdateTaskByID called ","data":{"filesCount":1,"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.882","level":"INFO","message":"Task updated successfully ","data":{"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.882","level":"INFO","message":"File added to task successfully ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:59:59.882","level":"INFO","message":"Starting HTTP download ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.237","level":"INFO","message":"HTTP response received ","data":{"contentLength":3708,"statusCode":200,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.237","level":"INFO","message":"Creating local file ","data":{"filePath":"/home/makhkets/testovoe/photo_storage/96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.237","level":"INFO","message":"Copying file content ","data":{"filePath":"/home/makhkets/testovoe/photo_storage/96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.238","level":"INFO","message":"File downloaded successfully ","data":{"bytesWritten":3708,"filePath":"/home/makhkets/testovoe/photo_storage/96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.238","level":"INFO","message":"Defer function: updating file status ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","finalStatus":"downloaded","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.238","level":"INFO","message":"FindAndDeleteFile called ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101","totalFiles":1}}
+{"timestamp":"01:00:00.238","level":"INFO","message":"File found in task ","data":{"fileIndex":0,"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.238","level":"INFO","message":"File removed from task ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","remainingFiles":0,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.239","level":"INFO","message":"Repo.UpdateTaskByID called ","data":{"filesCount":0,"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.239","level":"INFO","message":"Task updated successfully ","data":{"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.239","level":"INFO","message":"Task updated with final file status ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","status":"downloaded","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.239","level":"INFO","message":"File downloaded successfully ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.239","level":"INFO","message":"HowManyFiles called ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.240","level":"INFO","message":"Checking directory ","data":{"directory":"/home/makhkets/testovoe/photo_storage","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.240","level":"DEBUG","message":"Found matching file ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.240","level":"INFO","message":"HowManyFiles result ","data":{"fileCount":1,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.240","level":"INFO","message":"Files count after download ","data":{"maxFiles":3,"newFilesCount":1,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.240","level":"INFO","message":"Service.AddFileToTask completed ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:00:00.240","level":"INFO","message":"Service.AddFileToTask completed \n","data":{}}
+{"timestamp":"01:44:44.862","level":"INFO","message":"AddFileToTask handler called ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/429.jpg","maxFiles":3,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.862","level":"INFO","message":"URL validation passed, calling service.AddFileToTask \n","data":{}}
+{"timestamp":"01:44:44.862","level":"INFO","message":"Service.AddFileToTask started ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/429.jpg","maxFiles":3,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.862","level":"INFO","message":"findTask called ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.862","level":"INFO","message":"Repo.FindTaskByID called ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.863","level":"INFO","message":"Task found successfully ","data":{"filesCount":0,"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.863","level":"INFO","message":"Task found successfully ","data":{"filesCount":0,"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.863","level":"INFO","message":"Task found successfully ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101","taskStatus":"pending"}}
+{"timestamp":"01:44:44.863","level":"INFO","message":"HowManyFiles called ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.863","level":"INFO","message":"Checking directory ","data":{"directory":"/home/makhkets/testovoe/photo_storage","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.864","level":"DEBUG","message":"Found matching file ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.864","level":"INFO","message":"HowManyFiles result ","data":{"fileCount":1,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.864","level":"INFO","message":"Current files count ","data":{"currentFiles":1,"maxFiles":3,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.864","level":"INFO","message":"Starting file download ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/429.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.864","level":"INFO","message":"downloadFile started ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/429.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.864","level":"INFO","message":"Generated file info ","data":{"extension":".jpg","filePath":"/home/makhkets/testovoe/photo_storage/96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg","originalFilename":"429.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101","uniqueFilename":"96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg"}}
+{"timestamp":"01:44:44.865","level":"INFO","message":"Adding file to task ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.865","level":"INFO","message":"Repo.FindTaskByID called ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.865","level":"INFO","message":"Task found successfully ","data":{"filesCount":0,"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.865","level":"INFO","message":"File info created ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg","status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.865","level":"INFO","message":"Repo.UpdateTaskByID called ","data":{"filesCount":1,"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.865","level":"INFO","message":"Task updated successfully ","data":{"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.865","level":"INFO","message":"File added to task successfully ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.865","level":"INFO","message":"Starting HTTP download ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/429.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.943","level":"INFO","message":"HTTP response received ","data":{"contentLength":3854,"statusCode":200,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.943","level":"INFO","message":"Creating local file ","data":{"filePath":"/home/makhkets/testovoe/photo_storage/96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.943","level":"INFO","message":"Copying file content ","data":{"filePath":"/home/makhkets/testovoe/photo_storage/96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.943","level":"INFO","message":"File downloaded successfully ","data":{"bytesWritten":3854,"filePath":"/home/makhkets/testovoe/photo_storage/96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.944","level":"INFO","message":"Defer function: updating file status ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg","finalStatus":"downloaded","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.944","level":"INFO","message":"FindAndDeleteFile called ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101","totalFiles":1}}
+{"timestamp":"01:44:44.944","level":"INFO","message":"File found in task ","data":{"fileIndex":0,"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.944","level":"INFO","message":"File removed from task ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg","remainingFiles":0,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.944","level":"INFO","message":"Repo.UpdateTaskByID called ","data":{"filesCount":0,"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.944","level":"INFO","message":"Task updated successfully ","data":{"status":"pending","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.944","level":"INFO","message":"Task updated with final file status ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg","status":"downloaded","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.944","level":"INFO","message":"File downloaded successfully ","data":{"fileURL":"https://avotarov.ru/picture/avatar-100/kartinki/429.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.944","level":"INFO","message":"HowManyFiles called ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.944","level":"INFO","message":"Checking directory ","data":{"directory":"/home/makhkets/testovoe/photo_storage","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.944","level":"DEBUG","message":"Found matching file ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_429.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.945","level":"DEBUG","message":"Found matching file ","data":{"filename":"96a0bb2f-8584-43bd-aee6-bd093b253101_435.jpg","taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.945","level":"INFO","message":"HowManyFiles result ","data":{"fileCount":2,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.945","level":"INFO","message":"Files count after download ","data":{"maxFiles":3,"newFilesCount":2,"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.945","level":"INFO","message":"Service.AddFileToTask completed ","data":{"taskID":"96a0bb2f-8584-43bd-aee6-bd093b253101"}}
+{"timestamp":"01:44:44.945","level":"INFO","message":"Service.AddFileToTask completed \n","data":{}}
+{"timestamp":"01:43:43.909","level":"INFO","message":"shutting down server... \n","data":{}}
+{"timestamp":"01:43:43.910","level":"INFO","message":"server stopped listening \n","data":{}}
+{"timestamp":"01:43:43.910","level":"INFO","message":"server exited \n","data":{}}

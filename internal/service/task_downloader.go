@@ -28,35 +28,31 @@ import (
 // Status FileInfoStatus `json:"status"`
 // Error OptNilString `json:"error"`
 
-func (s *Service) downloadFile(ctx context.Context, fileURL string, uuid uuid.UUID) (*api.FileInfo, error) {
+func (s *Service) downloadFile(ctx context.Context, fileURL string, uuid uuid.UUID, NotAllowedExtensions []string) (*api.FileInfo, error) {
 	// извлекаем оригинальное имя файла из URL
 	parsedURL, err := url.Parse(fileURL)
 	if err != nil {
 		return nil, fmt.Errorf("failed to parse URL: %w", err)
 	}
 
-	// получаем путь файла из URL
 	path := parsedURL.Path
 	if path == "" {
 		path = "/"
 	}
 
-	// извлекаем имя файла из пути
+	// извлекаем имя из пути
 	originalFilename := ""
 	if path != "/" {
-		// разделяем путь по "/" и берем последнюю часть
 		parts := strings.Split(path, "/")
 		if len(parts) > 0 {
 			originalFilename = parts[len(parts)-1]
 		}
 	}
 
-	// если имя файла пустое или не содержит расширения, используем UUID
 	if originalFilename == "" || !strings.Contains(originalFilename, ".") {
 		originalFilename = uuid.String()
 	}
 
-	// извлекаем расширение файла
 	extension := ""
 	if strings.Contains(originalFilename, ".") {
 		parts := strings.Split(originalFilename, ".")
@@ -65,51 +61,46 @@ func (s *Service) downloadFile(ctx context.Context, fileURL string, uuid uuid.UU
 		}
 	}
 
-	// проверяем, является ли файл .jpeg
-	if strings.ToLower(extension) == ".jpeg" {
-		slog.Warn("JPEG file detected, skipping download but adding to task",
+	// Проверяем, разрешено ли расширение файла
+	isAllowed := true
+	for _, ext := range NotAllowedExtensions {
+		if strings.EqualFold(extension, ext) {
+			isAllowed = false
+			break
+		}
+	}
+	if !isAllowed {
+		slog.Warn("File extension not allowed, skipping download",
 			slog.String("taskID", uuid.String()),
 			slog.String("fileURL", fileURL),
-			slog.String("originalFilename", originalFilename))
+			slog.String("filename", originalFilename),
+			slog.String("extension", extension),
+		)
 
-		// добавляем файл в задачу со статусом "пропущен"
 		task, err := s.Repo.FindTaskByID(ctx, uuid)
 		if err != nil {
-			slog.Error("Failed to find task for file",
-				slog.String("taskID", uuid.String()),
-				slog.String("error", err.Error()))
+			slog.Error("Failed to find task for file", slog.String("taskID", uuid.String()), slog.String("error", err.Error()))
 			return nil, err
 		}
 
 		fileInfo := api.FileInfo{
 			URL:      *parsedURL,
 			Filename: originalFilename,
-			Status:   api.FileInfoStatusFailed, // или можно создать новый статус "skipped"
-			Error: api.OptNilString{
-				Value: "files are not allowed",
-				Null:  false,
-			},
+			Status:   api.FileInfoStatusFailed,
+			Error:    api.OptNilString{Value: "file extension not allowed", Null: false},
 		}
 
 		task.Files = append(task.Files, fileInfo)
-		err = s.Repo.UpdateTaskByID(ctx, uuid, task)
-		if err != nil {
-			slog.Error("Failed to update task with file",
-				slog.String("taskID", uuid.String()),
-				slog.String("error", err.Error()))
+		if err := s.Repo.UpdateTaskByID(ctx, uuid, task); err != nil {
+			slog.Error("Failed to update task with file", slog.String("taskID", uuid.String()), slog.String("error", err.Error()))
 			return nil, err
 		}
-
-
 		return &fileInfo, nil
 	}
 
-	// создаем уникальное имя файла с оригинальным именем и расширением
-	// добавляем UUID в начало для уникальности
 	uniqueFilename := uuid.String() + "_" + originalFilename
 	filePath := utils.FindDirectoryName("photo_storage") + "/" + uniqueFilename
 
-	// добавляю файл в задачу
 	task, err := s.Repo.FindTaskByID(ctx, uuid)
 	if err != nil {
 		slog.Error("Failed to find task for file addition",
@@ -126,7 +117,6 @@ func (s *Service) downloadFile(ctx context.Context, fileURL string, uuid uuid.UU
 		Error:    api.OptNilString{},
 	}
 
-
 	task.Files = append(task.Files, fileInfo)
 	err = s.Repo.UpdateTaskByID(ctx, uuid, task)
 	if err != nil {
@@ -135,7 +125,6 @@ func (s *Service) downloadFile(ctx context.Context, fileURL string, uuid uuid.UU
 			slog.String("error", err.Error()))
 		return nil, err
 	}
-
 
 	// окончательно обновляем статус файла
 	defer func() {
@@ -149,7 +138,6 @@ func (s *Service) downloadFile(ctx context.Context, fileURL string, uuid uuid.UU
 
 	}()
 
-
 	resp, err := http.Get(fileURL)
 	if err != nil {
 		status = api.FileInfoStatusFailed
@@ -160,7 +148,6 @@ func (s *Service) downloadFile(ctx context.Context, fileURL string, uuid uuid.UU
 		return nil, fmt.Errorf("failed to download: %w", err)
 	}
 	defer resp.Body.Close()
-
 
 	out, err := os.Create(filePath)
 	if err != nil {
@@ -173,7 +160,6 @@ func (s *Service) downloadFile(ctx context.Context, fileURL string, uuid uuid.UU
 		return nil, fmt.Errorf("failed to create file: %w", err)
 	}
 	defer out.Close()
-
 
 	bytesWritten, err := io.Copy(out, resp.Body)
 	if err != nil {

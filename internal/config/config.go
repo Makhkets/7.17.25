@@ -19,7 +19,7 @@ type App struct {
 
 type Filter struct {
 	MaxFiles          int      `json:"max_files"`
-	AllowedExtensions []string `json:"allowed_extensions"`
+	NotAllowedExtensions []string `json:"not_allowed_extensions"`
 }
 
 var config Config

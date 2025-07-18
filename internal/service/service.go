@@ -35,7 +35,7 @@ func (s *Service) CreateTask(ctx context.Context, task *api.Task) error {
 }
 
 // добавление таски
-func (s *Service) AddFileToTask(ctx context.Context, taskID uuid.UUID, fileURL string, maxFiles int) {
+func (s *Service) AddFileToTask(ctx context.Context, taskID uuid.UUID, fileURL string, maxFiles int, allowedExtensions []string) {
 	task, err := s.findTask(ctx, taskID)
 	if err != nil {
 		slog.Error("Failed to find task",
@@ -55,7 +55,7 @@ func (s *Service) AddFileToTask(ctx context.Context, taskID uuid.UUID, fileURL s
 		return
 	}
 
-	_, err = s.downloadFile(ctx, fileURL, taskID)
+	_, err = s.downloadFile(ctx, fileURL, taskID, allowedExtensions)
 	if err != nil {
 		slog.Error("Failed to download file",
 			slog.String("taskID", taskID.String()),

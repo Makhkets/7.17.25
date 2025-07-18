@@ -6,7 +6,7 @@
 
     "filter": {
         "max_files": 3,
-        "allowed_extensions": [
+        "not_allowed_extensions": [
             ".pdf",
             ".jpeg"
         ]

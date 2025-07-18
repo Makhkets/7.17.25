@@ -14,9 +14,7 @@ import (
 
 type Service interface {
 	CreateTask(ctx context.Context, task *api.Task) error
-	AddFileToTask(ctx context.Context, taskID uuid.UUID, fileURL string, maxFiles int)
-
-	// FindTaskByID(ctx context.Context, taskID string) (*api.Task, error)
+	AddFileToTask(ctx context.Context, taskID uuid.UUID, fileURL string, maxFiles int, allowedExtensions []string)
 }
 
 type ServerAPI struct {
@@ -63,7 +61,7 @@ func (s *ServerAPI) AddFileToTask(ctx context.Context, req *api.AddFileRequest, 
 	}
 
 	// добавить логику сервис и репозиторий
-	s.Service.AddFileToTask(ctx, params.TaskId, req.URL.String(), s.Config.Filter.MaxFiles)
+	s.Service.AddFileToTask(ctx, params.TaskId, req.URL.String(), s.Config.Filter.MaxFiles, s.Config.Filter.NotAllowedExtensions)
 
 	return &api.Task{}, nil
 }

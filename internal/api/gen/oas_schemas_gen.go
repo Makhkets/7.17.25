@@ -3,6 +3,7 @@
 package api
 
 import (
+	"io"
 	"net/url"
 	"time"
 
@@ -37,6 +38,46 @@ func (*AddFileToTaskConflict) addFileToTaskRes() {}
 type AddFileToTaskNotFound Error
 
 func (*AddFileToTaskNotFound) addFileToTaskRes() {}
+
+type DownloadTaskArchiveOK struct {
+	Data io.Reader
+}
+
+// Read reads data from the Data reader.
+//
+// Kept to satisfy the io.Reader interface.
+func (s DownloadTaskArchiveOK) Read(p []byte) (n int, err error) {
+	if s.Data == nil {
+		return 0, io.EOF
+	}
+	return s.Data.Read(p)
+}
+
+// DownloadTaskArchiveOKHeaders wraps DownloadTaskArchiveOK with response headers.
+type DownloadTaskArchiveOKHeaders struct {
+	ContentDisposition OptString
+	Response           DownloadTaskArchiveOK
+}
+
+// GetContentDisposition returns the value of ContentDisposition.
+func (s *DownloadTaskArchiveOKHeaders) GetContentDisposition() OptString {
+	return s.ContentDisposition
+}
+
+// GetResponse returns the value of Response.
+func (s *DownloadTaskArchiveOKHeaders) GetResponse() DownloadTaskArchiveOK {
+	return s.Response
+}
+
+// SetContentDisposition sets the value of ContentDisposition.
+func (s *DownloadTaskArchiveOKHeaders) SetContentDisposition(val OptString) {
+	s.ContentDisposition = val
+}
+
+// SetResponse sets the value of Response.
+func (s *DownloadTaskArchiveOKHeaders) SetResponse(val DownloadTaskArchiveOK) {
+	s.Response = val
+}
 
 // Ref: #/components/schemas/Error
 type Error struct {
@@ -227,6 +268,52 @@ func (o OptNilString) Get() (v string, ok bool) {
 
 // Or returns value if set, or given parameter if does not.
 func (o OptNilString) Or(d string) string {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptString returns new OptString with value set to v.
+func NewOptString(v string) OptString {
+	return OptString{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptString is optional string.
+type OptString struct {
+	Value string
+	Set   bool
+}
+
+// IsSet returns true if OptString was set.
+func (o OptString) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptString) Reset() {
+	var v string
+	o.Value = v
+	o.Set = false
+}
+
+// SetTo sets value to v.
+func (o *OptString) SetTo(v string) {
+	o.Set = true
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptString) Get() (v string, ok bool) {
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptString) Or(d string) string {
 	if v, ok := o.Get(); ok {
 		return v
 	}

@@ -107,6 +107,33 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
 
+  /tasks/{taskId}/download:
+    get:
+      summary: Скачать ZIP архив задачи
+      operationId: downloadTaskArchive
+      parameters:
+        - name: taskId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: ZIP архив для скачивания
+          content:
+            application/zip:
+              schema:
+                type: string
+                format: binary
+          headers:
+            Content-Disposition:
+              description: Имя файла для скачивания
+              schema:
+                type: string
+                example: 'attachment; filename="archive.zip"'
+
+
 components:
   schemas:
     Task:

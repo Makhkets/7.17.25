@@ -6,8 +6,9 @@ package api
 type OperationName = string
 
 const (
-	AddFileToTaskOperation OperationName = "AddFileToTask"
-	CreateTaskOperation    OperationName = "CreateTask"
-	GetTaskStatusOperation OperationName = "GetTaskStatus"
-	GetTasksOperation      OperationName = "GetTasks"
+	AddFileToTaskOperation       OperationName = "AddFileToTask"
+	CreateTaskOperation          OperationName = "CreateTask"
+	DownloadTaskArchiveOperation OperationName = "DownloadTaskArchive"
+	GetTaskStatusOperation       OperationName = "GetTaskStatus"
+	GetTasksOperation            OperationName = "GetTasks"
 )

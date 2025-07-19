@@ -40,7 +40,6 @@ func (r *Repo) CreateTask(ctx context.Context, task *api.Task) error {
 
 func (r *Repo) FindTaskByID(ctx context.Context, taskID uuid.UUID) (*api.Task, error) {
 	slog.Info("Repo.FindTaskByID called", slog.String("taskID", taskID.String()))
-
 	task, ok := tasks[taskID]
 	if !ok {
 		slog.Error("Task not found", slog.String("taskID", taskID.String()))

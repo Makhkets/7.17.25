@@ -100,26 +100,62 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 					return
 				}
 				switch elem[0] {
-				case '/': // Prefix: "/files"
+				case '/': // Prefix: "/"
 
-					if l := len("/files"); len(elem) >= l && elem[0:l] == "/files" {
+					if l := len("/"); len(elem) >= l && elem[0:l] == "/" {
 						elem = elem[l:]
 					} else {
 						break
 					}
 
 					if len(elem) == 0 {
-						// Leaf node.
-						switch r.Method {
-						case "POST":
-							s.handleAddFileToTaskRequest([1]string{
-								args[0],
-							}, elemIsEscaped, w, r)
-						default:
-							s.notAllowed(w, r, "POST")
+						break
+					}
+					switch elem[0] {
+					case 'd': // Prefix: "download"
+
+						if l := len("download"); len(elem) >= l && elem[0:l] == "download" {
+							elem = elem[l:]
+						} else {
+							break
 						}
 
-						return
+						if len(elem) == 0 {
+							// Leaf node.
+							switch r.Method {
+							case "GET":
+								s.handleDownloadTaskArchiveRequest([1]string{
+									args[0],
+								}, elemIsEscaped, w, r)
+							default:
+								s.notAllowed(w, r, "GET")
+							}
+
+							return
+						}
+
+					case 'f': // Prefix: "files"
+
+						if l := len("files"); len(elem) >= l && elem[0:l] == "files" {
+							elem = elem[l:]
+						} else {
+							break
+						}
+
+						if len(elem) == 0 {
+							// Leaf node.
+							switch r.Method {
+							case "POST":
+								s.handleAddFileToTaskRequest([1]string{
+									args[0],
+								}, elemIsEscaped, w, r)
+							default:
+								s.notAllowed(w, r, "POST")
+							}
+
+							return
+						}
+
 					}
 
 				}
@@ -269,28 +305,66 @@ func (s *Server) FindPath(method string, u *url.URL) (r Route, _ bool) {
 					}
 				}
 				switch elem[0] {
-				case '/': // Prefix: "/files"
+				case '/': // Prefix: "/"
 
-					if l := len("/files"); len(elem) >= l && elem[0:l] == "/files" {
+					if l := len("/"); len(elem) >= l && elem[0:l] == "/" {
 						elem = elem[l:]
 					} else {
 						break
 					}
 
 					if len(elem) == 0 {
-						// Leaf node.
-						switch method {
-						case "POST":
-							r.name = AddFileToTaskOperation
-							r.summary = "Добавить файл в задачу"
-							r.operationID = "addFileToTask"
-							r.pathPattern = "/tasks/{taskId}/files"
-							r.args = args
-							r.count = 1
-							return r, true
-						default:
-							return
+						break
+					}
+					switch elem[0] {
+					case 'd': // Prefix: "download"
+
+						if l := len("download"); len(elem) >= l && elem[0:l] == "download" {
+							elem = elem[l:]
+						} else {
+							break
 						}
+
+						if len(elem) == 0 {
+							// Leaf node.
+							switch method {
+							case "GET":
+								r.name = DownloadTaskArchiveOperation
+								r.summary = "Скачать ZIP архив задачи"
+								r.operationID = "downloadTaskArchive"
+								r.pathPattern = "/tasks/{taskId}/download"
+								r.args = args
+								r.count = 1
+								return r, true
+							default:
+								return
+							}
+						}
+
+					case 'f': // Prefix: "files"
+
+						if l := len("files"); len(elem) >= l && elem[0:l] == "files" {
+							elem = elem[l:]
+						} else {
+							break
+						}
+
+						if len(elem) == 0 {
+							// Leaf node.
+							switch method {
+							case "POST":
+								r.name = AddFileToTaskOperation
+								r.summary = "Добавить файл в задачу"
+								r.operationID = "addFileToTask"
+								r.pathPattern = "/tasks/{taskId}/files"
+								r.args = args
+								r.count = 1
+								return r, true
+							default:
+								return
+							}
+						}
+
 					}
 
 				}

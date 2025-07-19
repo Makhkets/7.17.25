@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"log/slog"
+	"strconv"
 	"time"
 
 	"github.com/google/uuid"
@@ -14,7 +15,9 @@ import (
 
 type Service interface {
 	CreateTask(ctx context.Context, task *api.Task) error
-	AddFileToTask(ctx context.Context, taskID uuid.UUID, fileURL string, maxFiles int, allowedExtensions []string)
+	GetTaskByID(ctx context.Context, taskID uuid.UUID, address string, maxFiles int) (*api.Task, error)
+
+	AddFileToTask(ctx context.Context, taskID uuid.UUID, fileURL string, maxFiles int, allowedExtensions []string, address string)
 }
 
 type ServerAPI struct {
@@ -60,18 +63,28 @@ func (s *ServerAPI) AddFileToTask(ctx context.Context, req *api.AddFileRequest, 
 		return nil, fmt.Errorf("invalid url")
 	}
 
-	// добавить логику сервис и репозиторий
-	s.Service.AddFileToTask(ctx, params.TaskId, req.URL.String(), s.Config.Filter.MaxFiles, s.Config.Filter.NotAllowedExtensions)
+	go s.Service.AddFileToTask(ctx, params.TaskId, req.URL.String(), s.Config.Filter.MaxFiles, s.Config.Filter.NotAllowedExtensions, s.Config.App.Address+":"+strconv.Itoa(s.Config.App.Port))
 
 	return &api.Task{}, nil
+}
+
+// DownloadTaskArchive implements downloadTaskArchive operation.
+// Скачать ZIP архив задачи.
+// GET /tasks/{taskId}/download
+func (s *ServerAPI) DownloadTaskArchive(ctx context.Context, params api.DownloadTaskArchiveParams) (*api.DownloadTaskArchiveOKHeaders, error) {
+	panic("not implemented")
 }
 
 // GetTaskStatus implements getTaskStatus operation.
 // Получить статус задачи.
 // GET /tasks/{taskId}
 func (s *ServerAPI) GetTaskStatus(ctx context.Context, params api.GetTaskStatusParams) (api.GetTaskStatusRes, error) {
-	panic("not implemented")
-
+	taskId := params.TaskId
+	task, err := s.Service.GetTaskByID(ctx, taskId, s.Config.App.Address+":"+strconv.Itoa(s.Config.App.Port), s.Config.Filter.MaxFiles)
+	if err != nil {
+		return nil, err
+	}
+	return task, nil
 }
 
 // GetTasks implements getTasks operation.

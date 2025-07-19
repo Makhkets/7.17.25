@@ -2,3 +2,4 @@ go.mod
 x.md
 go.sum
 cmd/test
+photo_storage/*

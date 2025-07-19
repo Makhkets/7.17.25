@@ -20,6 +20,13 @@ type Handler interface {
 	//
 	// POST /tasks
 	CreateTask(ctx context.Context) (CreateTaskRes, error)
+	// DownloadTaskArchive implements downloadTaskArchive operation.
+	//
+	// Скачать ZIP архив задачи.
+	//
+	// GET /tasks/{taskId}/download
+	DownloadTaskArchive(ctx context.Context, params DownloadTaskArchiveParams) (*DownloadTaskArchiveOKHeaders, error)
+	
 	// GetTaskStatus implements getTaskStatus operation.
 	//
 	// Получить статус задачи.

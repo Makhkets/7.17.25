@@ -31,6 +31,15 @@ func (UnimplementedHandler) CreateTask(ctx context.Context) (r CreateTaskRes, _ 
 	return r, ht.ErrNotImplemented
 }
 
+// DownloadTaskArchive implements downloadTaskArchive operation.
+//
+// Скачать ZIP архив задачи.
+//
+// GET /tasks/{taskId}/download
+func (UnimplementedHandler) DownloadTaskArchive(ctx context.Context, params DownloadTaskArchiveParams) (r *DownloadTaskArchiveOKHeaders, _ error) {
+	return r, ht.ErrNotImplemented
+}
+
 // GetTaskStatus implements getTaskStatus operation.
 //
 // Получить статус задачи.
